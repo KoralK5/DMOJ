@@ -1,0 +1,6 @@
+n = int(input())
+graph = [[] for i in range(n)]
+
+for current_page in range(n):
+    pages = list(map(int, input().split()))
+    graph[current_page].append(pages[1::])
